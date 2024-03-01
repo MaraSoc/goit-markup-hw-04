@@ -5,6 +5,8 @@
   --footer-bg-color: #2e2f42;
   --icons-color-active: #10b6e8;
   --social-icon-bg-color: #4d5ae5;
+  --social-icon-color: #f4f4fd;
+  --customers-icon-color: #8e8f99;
 }
 
 /* General styles */
@@ -106,8 +108,10 @@ a {
 /* Hero section */
 .hero-section {
   display: block;
+  height: 600px;
   padding: 200px;
-  background: url("../images/hero-section-office.png");
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/hero-section-office.png");
   text-align: center;
 }
 
@@ -154,7 +158,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.first-section-icons:hover {
+.first-social-icon:hover .first-social-icon:active {
   color: var(--icons-color-active);
 }
 
@@ -180,6 +184,9 @@ a {
   background-color: #f4f4fd;
   padding-bottom: 120px;
   padding-top: 120px;
+}
+.team-section h2 {
+  margin-bottom: 72px;
 }
 .team-section .team-section-list {
   display: flex;
@@ -233,9 +240,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--social-icon-color);
 }
-.team-icons-list .team-social-icon:hover {
-.team-icons-list .team-social-icon:focus
+.team-icons-list .team-social-icon:hover,
+.team-icons-list .team-social-icon:active {
   color: var(--icons-color-active);
 }
 /* Customers-section */
@@ -269,6 +277,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--customers-icon-color);
 }
 
 .customers-icons:hover {
@@ -292,34 +301,28 @@ a {
   width: 1440px;
   height: 312px;
 }
-.footer-section-style{
+.footer-section-style {
   display: flex;
-   background-color: var(--footer-bg-color);
+  background-color: var(--footer-bg-color);
 }
 .footer-item {
   box-sizing: content-box;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 56px;
- 
 }
 
 .footer-section .footer-text {
   color: #f4f4fd;
 }
-.footer-section-social-links{
+.footer-section-social-links {
   box-sizing: content-box;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
   margin-left: 120px;
 }
-.footer-section-social-links p{
+.footer-section-social-links p {
   font-weight: 500;
-  color: #fff;}
-
-.footer-social-icon-list:hover {
-  color: #10b6e8;
+  color: #fff;
 }
 
 .footer-icons-list {
@@ -340,8 +343,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--social-icon-color);
 }
-
+.footer-icons-list .footer-social-icon:hover,
+.footer-icons-list .footer-social-icon:active {
+  color: var(--icons-color-active);
+}
 
 /* Button section */
 .hero-section .hero-button {
