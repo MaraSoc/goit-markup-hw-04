@@ -107,7 +107,7 @@ a {
 .hero-section {
   display: block;
   padding: 200px;
-  background-image: url("./images/hero-section-office.png");
+  background: url("../images/hero-section-office.png");
   text-align: center;
 }
 
@@ -309,14 +309,19 @@ a {
 }
 .footer-section-social-links{
   box-sizing: content-box;
+
   padding-top: 100px;
   padding-bottom: 100px;
   margin-left: 120px;
 }
 .footer-section-social-links p{
   font-weight: 500;
-  color: #fff;
+  color: #fff;}
+
+.footer-social-icon-list:hover {
+  color: #10b6e8;
 }
+
 .footer-icons-list {
   display: flex;
   gap: 24px;
@@ -336,10 +341,8 @@ a {
   justify-content: center;
   align-items: center;
 }
-.footer-icons-list .footer-social-icon:hover {
-.footer-icons-list .footer-social-icon:focus
-  color: var(--icons-color-active);
-}
+
+
 /* Button section */
 .hero-section .hero-button {
   box-sizing: block;
