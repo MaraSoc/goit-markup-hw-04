@@ -3,9 +3,10 @@
   --secondary-text-color: #434455;
   --primary-bg-color: #ffffff;
   --footer-bg-color: #2e2f42;
-  --icons-color-active: #10b6e8;
+  --icons-color-active: #4d5ae5;
   --social-icon-bg-color: #4d5ae5;
-  --social-icon-color: #f4f4fd;
+  --social-icon-color-active: #f4f4fd;
+  --social-icon-color: #8e8f99;
   --customers-icon-color: #8e8f99;
 }
 
@@ -81,7 +82,7 @@ a {
 }
 .global-header .main-nav a:hover {
   color: #404bbf;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .nav-list {
   display: flex;
@@ -235,7 +236,6 @@ a {
 .team-icons-list .team-social-icon {
   width: 40px;
   height: 40px;
-  background-color: var(--social-icon-bg-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -244,7 +244,8 @@ a {
 }
 .team-icons-list .team-social-icon:hover,
 .team-icons-list .team-social-icon:active {
-  color: var(--icons-color-active);
+  background-color: var(--icons-color-active);
+  color: var(--social-icon-color-active);
 }
 /* Customers-section */
 .customers-section {
@@ -282,6 +283,7 @@ a {
 
 .customers-icons:hover {
   color: var(--icons-color-active);
+  border-color: var(--icons-color-active);
 }
 
 /* Footer section */
@@ -338,7 +340,6 @@ a {
 .footer-icons-list .footer-social-icon {
   width: 40px;
   height: 40px;
-  background-color: var(--social-icon-bg-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -347,7 +348,8 @@ a {
 }
 .footer-icons-list .footer-social-icon:hover,
 .footer-icons-list .footer-social-icon:active {
-  color: var(--icons-color-active);
+  background-color: var(--social-icon-bg-color);
+  color: var(--social-icon-color-active);
 }
 
 /* Button section */
